@@ -1,0 +1,19 @@
+form {
+    width: 298px;
+    height: 415.6px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
