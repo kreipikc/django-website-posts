@@ -5,5 +5,5 @@
 {% endblock %}
 
 {% block content %}
-<h1>Hello Bro!</h1>
+<h1>Hello {{ user.username|default:'Guest' }}!</h1>
 {% endblock %}
