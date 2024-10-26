@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block link %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style/post.css' %}">
+{% endblock %}
+
+{% block title %}
+Создание поста
+{% endblock %}
+
+{% block content %}
+    <h1>Создать пост</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+{% endblock%}

@@ -28,3 +28,8 @@ button[type="submit"] {
     border-radius: 3px;
     cursor: pointer;
 }
+
+#link {
+    justify-content: center;
+    display: flex;
+}
