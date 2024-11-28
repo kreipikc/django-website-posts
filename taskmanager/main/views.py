@@ -39,7 +39,7 @@ def edit_post(request, post_id):
 def delete_post(request, post_id):
     if request.method == 'POST':
         try:
-            post = post = get_object_or_404(Post, pk=post_id)
+            post = get_object_or_404(Post, pk=post_id)
             post.delete()
             messages.success(request, 'Пост успешно удален.')
             return redirect('/')
